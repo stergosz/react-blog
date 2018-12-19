@@ -1,0 +1,30 @@
+#header {
+  background: #ededed;
+  padding: 20px;
+
+  .header_logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    li {
+      display: inline-block;
+
+      + li {
+        margin-left: 15px;
+      }
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
