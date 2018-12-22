@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import logo from "../assets/img/logo.png";
 
@@ -13,16 +14,16 @@ export default class Header extends Component {
       <div id="header">
         <div className="container">
           <div className="row">
-            <a href={process.env.PUBLIC_URL}>
+            <NavLink to="/">
               <img src={logo} className="header_logo" alt="logo" />
-            </a>
+            </NavLink>
 
             <ul className="header_menu">
               <li>
-                <a href={process.env.PUBLIC_URL}>Login</a>
+                <NavLink to="/login">Login</NavLink>
               </li>
               <li>
-                <a href={process.env.PUBLIC_URL}>Register</a>
+                <NavLink to="/register">Register</NavLink>
               </li>
             </ul>
           </div>

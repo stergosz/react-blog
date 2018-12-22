@@ -40,7 +40,12 @@ module.exports = {
 
   devServer: {
     port: 3000,
-    open: true
+    open: true,
+    historyApiFallback: true,
+    contentBase: "./",
+    proxy: {
+      "/api": "http://localhost:3050"
+    }
   },
 
   plugins: [

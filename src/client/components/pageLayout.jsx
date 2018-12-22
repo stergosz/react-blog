@@ -12,6 +12,15 @@ export default class PageLayout extends Component {
     this.state = {};
   }
 
+  /* componentDidMount() {
+    fetch("/api/getUsername")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data); // Prints result from `response.json()` in getRequest
+      })
+      .catch(error => console.error(error));
+  } */
+
   render() {
     return (
       <React.Fragment>
